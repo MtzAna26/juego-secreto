@@ -56,7 +56,7 @@ function generarNumeroSecreto() {
 
 function condicionesIniciales(){
     asignarTextoElemento('h1', 'Juego del numero secreto');
-    asignarTextoElemento('p', `Indica un número del 1 al 10 ${numeroMaximo}`);
+    asignarTextoElemento('p', `Indica un número del 1 al  ${numeroMaximo}`);
      numeroSecreto = generarNumeroSecreto();
      intentos = 1;
 }
@@ -71,5 +71,6 @@ function reiniciarJuego() {
     // deshabilitar el botón de nuevo juego 
     document.querySelector('#reiniciar').setAttribute('disable', 'true');
 }
+
 
 condicionesIniciales();
